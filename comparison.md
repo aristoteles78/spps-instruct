@@ -5,7 +5,7 @@ Comparison functions are used to compare field values to each other or to a spec
 For example, you can check strings for equality using `=`. An example of string equality verification is: `Class = "class 1"`.
 For purposes of numeric comparison, *greater* means closer to positive infinity, and *lesser* means closer to negative infinity. That is, all negative numbers are less than any positive number.
 
-##Table 1. CLEM comparison functions
+Table 1. CLEM comparison functions
 
 | Function                   | Result  | Description                                                                                                                                               |
 |----------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
