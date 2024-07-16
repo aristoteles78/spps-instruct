@@ -49,5 +49,4 @@ In CLEM, a string is any sequence of characters between matching double quotatio
 | trimend(STRING)                | String   | Removes trailing white space characters from the specified string. 
 | unicode_char(NUM)              | CAHR.    | Input must be decimal, not hexadecimal values. Returns the character with Unicode value NUM.     
 | unicode_value(CHAR)            | NUM      | Returns the Unicode value of CHAR.     
-| uppertolower(CHAR) uppertolower (STRING)  | CHAR or String   | Input can be either a string or character and is used in this function to return a new item of the same type with any uppercase characters converted to their lowercase equivalents.
-Remember to specify strings with double quotes and characters with single back quotes. Simple field names should be specified without quotes.     
+| uppertolower(CHAR) uppertolower (STRING)  | CHAR or String   | Input can be either a string or character and is used in this function to return a new item of the same type with any uppercase characters converted to their lowercase equivalents. Remember to specify strings with double quotes and characters with single back quotes. Simple field names should be specified without quotes.     
