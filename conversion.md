@@ -1,7 +1,5 @@
 # Conversion functions
 
-**Last Updated: 2024-01-18**
-
 With conversion functions, you can construct new fields and convert the storage type of existing files.
 
 For example, you can form new strings by joining strings together or by taking strings apart. To join two strings, use the operator `><`. For example, if the field `Site` has the value "BRAMLEY", then `"xx" >< Site` returns "xxBRAMLEY". The result of `><` is always a string, even if the arguments aren't strings. Thus, if field V1 is 3 and field V2 is 5, then `V1 >< V2` returns "35" (a string, not a number).
