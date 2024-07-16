@@ -1,21 +1,11 @@
-Trigonometric functions
-All of the functions in this section either take an angle as an argument or return one as a result.
+SoundEx functions
+====================
+SoundEx is a method used to find strings when the sound is known but the precise spelling isn't known.
 
-Table 1. CLEM trigonometric functions
-Function	Result	Description
-arccos(NUM)	Real	Computes the arccosine of the specified angle.
-arccosh(NUM)	Real	Computes the hyperbolic arccosine of the specified angle.
-arcsin(NUM)	Real	Computes the arcsine of the specified angle.
-arcsinh(NUM)	Real	Computes the hyperbolic arcsine of the specified angle.
-arctan(NUM)	Real	Computes the arctangent of the specified angle.
-arctan2(NUM_Y, NUM_X)	Real	Computes the arctangent of NUM_Y / NUM_X and uses the signs of the two numbers to derive quadrant information. The result is a real in the range - pi < ANGLE <= pi (radians) – 180 < ANGLE <= 180 (degrees)
-arctanh(NUM)	Real	Computes the hyperbolic arctangent of the specified angle.
-cos(NUM)	Real	Computes the cosine of the specified angle.
-cosh(NUM)	Real	Computes the hyperbolic cosine of the specified angle.
-pi	Real	This constant is the best real approximation to pi.
-sin(NUM)	Real	Computes the sine of the specified angle.
-sinh(NUM)	Real	Computes the hyperbolic sine of the specified angle.
-tan(NUM)	Real	Computes the tangent of the specified angle.
-tanh(NUM)	Real	Computes the hyperbolic tangent of the specified angle.
-FooterIBM - Office of the CIO
-IBM - Office of the CIO
+Developed in 1918, the method searches out words with similar sounds based on phonetic assumptions about how certain letters are pronounced. SoundEx can be used to search names in a database (for example, where spellings and pronunciations for similar names may vary). The basic SoundEx algorithm is documented in a number of sources and, despite known limitations (for example, leading letter combinations such as ph and f won't match even though they sound the same), is supported in some form by most databases.
+## Table 1. CLEM soundex functions
+| Function                   | Result  | Description                                                                                                                                               |
+|----------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| soundex(STRING)            | Integer  | Returns the four-character SoundEx code for the specified STRING.                                                                                                          |
+| soundex_difference(STRING1, STRING2)               | Integer  | Returns an integer between 0 and 4 that indicates the number of characters that are the same in the SoundEx encoding for the two strings, where 0 indicates no similarity and 4 indicates strong similarity or identical strings.                                                                                                 |
+
